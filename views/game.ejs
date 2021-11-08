@@ -1,0 +1,65 @@
+<%- include ("./partials/header") %>
+
+
+  <div class="container con1">
+    <div class="games-card">
+
+      <div class="card card-css" style="width: 80%;">
+        <div style="margin-top:1em; margin-bottom: 0.5em;">
+          <h1 style="display:inline;" class="card-title head-css">
+            <%= game.name %>
+          </h1>
+          <div class="icon-css" style="display:inline; float:right; font-size: inherit; ">
+            <a style="color:inherit" href="/game/<%=game._id%>/edit"> <i style="font-size: 1.8em; margin-right:0.5em"
+                class="far fa-edit"></i>
+            </a>
+            <form style="display:inline" action="/game/<%=game._id%>/delete" method="post">
+              <button class="btn-css" style="color:inherit"><i style="font-size: 1.8em; margin-right: 0.3em;"
+                  class="far fa-trash-alt"></i></button>
+            </form>
+
+          </div>
+        </div>
+
+        <img src=" <%= game.image %>" class="card-img-top"
+          onerror=this.src="https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png">
+        <div class="card-body">
+          <p id="para-css" class="card-text">
+            <%= game.description %>
+          </p>
+          <p><strong>Genre : </strong>
+            <%= game.genre %>
+          </p>
+          <p><strong>Developer : </strong>
+            <%= game.developer %>
+          </p>
+          <p><strong>Publisher : </strong>
+            <%= game.publisher %>
+          </p>
+          <p><strong>Platform : </strong>
+            <%= game.platform %>
+          </p>
+          <p><strong>Released Year : </strong>
+            <%= game.releaseYear %>
+          </p>
+
+          <form action="/">
+            <button class="btn-hover color-7">Go back</button>
+          </form>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <%- include ("./partials/footer") %>

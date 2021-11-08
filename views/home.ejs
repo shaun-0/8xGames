@@ -1,0 +1,31 @@
+<%- include ("./partials/header") %>
+
+  <div class="container con1">
+    <h1 style="margin-top:3em;" class="col">Top Online Games Collection</h1>
+    <div class="games-card">
+      <% games.forEach(function(game){ %>
+
+        <div class="card card-css" style="width: 80%;">
+          <img src=" <%= game.image %>" class="card-img-top"
+            onerror=this.src="https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png">
+          <div class="card-body">
+            <h4 style="margin-bottom: 0.6em;" class="card-title">
+              <%= game.name %>
+            </h4>
+
+            <p id="para-css" class="card-text">
+              <%= game.description %>
+            </p>
+            <form action="/game/<%= game._id %>">
+              <button class="btn-hover color-1">Know More</button>
+            </form>
+          </div>
+        </div>
+
+
+
+        <% }); %>
+    </div>
+  </div>
+
+  <%- include ("./partials/footer") %>

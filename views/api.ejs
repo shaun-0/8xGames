@@ -1,0 +1,39 @@
+<%- include ("./partials/header") %>
+
+  <div style="margin-top: 6em; max-width: 600px; background-color: white;" class="container">
+
+    <h1 style="margin-top:0.8em; margin-bottom:0.5em">8xGames API routes</h1>
+    <div style="margin-bottom: 0.4em;">
+      <table class="table table-striped table-hover">
+        <tr>
+          <th>Endpoints</th>
+          <th>Description</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>GET /api/games</td>
+            <td>Get all games</td>
+          </tr>
+          <tr>
+            <td>GET /api/games/:gameId</td>
+            <td>Get detail of particular Game</td>
+          </tr>
+          <tr>
+            <td>POST /api/games</td>
+            <td>Add new Game</td>
+          </tr>
+          <tr>
+            <td>PUT /api/games/:gameId</td>
+            <td>Edit particular Game</td>
+          </tr>
+          <tr>
+            <td>DELETE /api/games/:gameId</td>
+            <td>Delete particular Game</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <%- include ("./partials/footer") %>

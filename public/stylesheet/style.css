@@ -1,0 +1,155 @@
+.navbar-update{
+  margin-left: 10%;
+}
+.icon-css{
+  color: #8E2DE2;  /* fallback for old browsers */
+color: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.btn-css {
+  background-color: white; /* Blue background */
+  border: none; /* Remove borders */
+  color: #8E2DE2;  /* fallback for old browsers */
+color: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to right, #4A00E0, #8E2DE2);
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn-css:hover {
+  background-color: white;
+  color: #8E2DE2;  /* fallback for old browsers */
+}
+
+.con1{
+  margin-top: 4em;
+}
+.head-css{
+  color: #232526;  /* fallback for old browsers */
+color: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to right, #414345, #232526);
+
+  margin-bottom: 0.6em; font-family: 'Bebas Neue', cursive;
+  padding-left: 0.3em;
+  padding-top: 0.3em;
+}
+.col{
+  font-family: 'Bebas Neue', cursive;
+  border-bottom: 3px solid #595959;
+}
+#icard{
+  border:1px solid black;
+  max-width:100%;
+}
+
+#game-pic{
+  height:24em;
+  object-fit: contain;
+  max-width: 98%;
+  margin:0.3em;
+  border-radius: 0.4em;
+}
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  width: 180px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 50px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.btn-hover.color-4 {
+  background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+.btn-hover.color-7 {
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+.btn-hover.color-9 {
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+#titl{
+  padding-top: 0.6em;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 3px; font-family: 'Montserrat', sans-serif;
+
+}
+#gob{
+  text-decoration: none;
+  height:50px;
+  width: 180px;
+}
+#txt-css{
+  margin-bottom: 0.5em;
+}
+#form-css{
+  width:100%;
+}
+#cont-css
+{
+  background-color: white;
+  
+  align-self: center;
+  border-radius: 0.6em;
+  border:0px solid black;
+  margin-top:5em;
+  margin-bottom: 1em;
+}
+.card-css{
+  margin-bottom: 0.5em;
+  padding:0.3em;
+}
+#para-css{
+  font-family: 'Lato', sans-serif;
+}
+body{
+  /* background: #E0EAFC; 
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC); 
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); */
+background: #0cebeb;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}

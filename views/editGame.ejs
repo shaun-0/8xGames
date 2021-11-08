@@ -1,0 +1,62 @@
+<%- include ("./partials/header") %>
+  <script>
+    document.body.style.background = "url('https://miro.medium.com/max/6000/1*l0g2FVIE-Ds8UUSjNtpeEA.jpeg') no-repeat center center fixed";
+    document.body.style.backgoundSize = contain;
+  </script>
+
+  <div style="width:600px;font-family: 'Montserrat', sans-serif;" id="cont-css" class="container-md  ">
+    <h1 id="titl">Add New Game</h1>
+    <div style="padding-top: 0.2em;" class="container">
+      <div id="form-css" style="margin: 0 auto;" class="col-12 col-md-6 col-lg-5 p-5 customborder">
+
+        <form style="display:inline" action="/game/<%=game.id%>/edit" method="POST">
+          <div id="txt-css" class="form-group">
+            <label for="name">Game Name</label>
+            <input type="text" class="form-control" name="name" id="name" autocomplete="off" value="<%=game.name%>">
+          </div>
+          <div id="txt-css" class="form-group">
+            <label for="genre">Genre</label>
+            <input type="text" class="form-control" name="genre" id="genre" autocomplete="off" value="<%=game.genre%>">
+          </div>
+          <div id="txt-css" class="form-group">
+            <label for="developer">Developers</label>
+            <input type="text" class="form-control" name="developer" id="developer" autocomplete="off"
+              value="<%=game.developer%>">
+          </div>
+          <div id="txt-css" class="form-group">
+            <label for="publisher">Publishers</label>
+            <input type="text" class="form-control" name="publisher" id="publisher" autocomplete="off"
+              value="<%=game.publisher%>">
+          </div>
+          <div id="txt-css" class="form-group">
+            <label for="description">Description</label>
+            <input type="text-area" class="form-control" name="description" id="description" autocomplete="off"
+              value="<%=game.description%>">
+          </div>
+          <div id="txt-css" class="form-group">
+            <label for="platform">Platforms</label>
+            <input type="text" class="form-control" name="platform" id="platform" autocomplete="off"
+              value="<%=game.platform%>">
+          </div>
+          <div id="txt-css" class="form-group">
+            <label for="image">Image URL</label>
+            <input type="text" class="form-control" name="image" id="image" autocomplete="off" value="<%=game.image%>">
+          </div>
+          <div id="txt-css" class="form-group">
+            <label for="releaseYear">Release Year</label>
+            <input type="text" class="form-control" name="releaseYear" id="releaseYear" autocomplete="off"
+              value="<%=game.releaseYear%>">
+          </div>
+          <button class="btn-hover color-7">Submit</button>
+
+
+        </form>
+        <a style="text-decoration: none;" href="/">
+          <button style="height:50px; display:inline" class="btn-hover color-9">Go Back</button>
+        </a>
+
+
+      </div>
+    </div>
+  </div>
+  <%- include ("./partials/footer") %>
