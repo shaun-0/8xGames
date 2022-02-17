@@ -61,19 +61,20 @@ routes.post("/games", async (req, res) => {
     })
     newGame.save();
     if (newGame) {
-      console.log("created\n" + newGame);
+      res.send("true");
+    }else{
+      res.send("false");
     }
-    res.redirect("/api/games");
   } catch (err) {
     console.log(err);
-    res.send(err.message);
+    res.send("false");
   }
 })
 
 routes.put("/games/:gameId", async (req, res) => {
   games.findByIdAndUpdate({ _id: req.params.gameId }, req.body, function (err, game) {
     if (err) {
-      res.send("Invalid Id");
+      res.send("false");
     }
     res.redirect("/api/games/" + req.params.gameId);
   })
@@ -82,7 +83,7 @@ routes.put("/games/:gameId", async (req, res) => {
 routes.delete("/games/:gameId", async (req, res) => {
   games.findByIdAndRemove(req.params.gameId, (err) => {
     if (err) {
-      res.send(err.message);
+      res.send("false");
     } else {
       res.redirect("/api/games");
     }
