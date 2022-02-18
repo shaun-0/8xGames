@@ -8,35 +8,35 @@ const gameSchema = new mongoose.Schema({
   },
   genre: {
     type: String,
-    minlength: 1,
+
     maxlength: 100
   },
   developer: {
     type: String,
-    minlength: 1,
+
     maxlength: 500,
     default: "Unknown"
   },
   publisher: {
     type: String,
-    minlength: 1,
+
     maxlength: 500,
     default: "Unknown"
   },
   description: {
     type: String,
-    minlength: 1,
+
     maxlength: 1000,
     required: true
   },
   platform: {
     type: String,
-    minlength: 1,
+
     maxlength: 500
   },
   image: {
-    type: String,
-    minlength: 1
+    type: String
+
   },
   releaseYear: {
     type: Number,
