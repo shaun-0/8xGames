@@ -72,11 +72,14 @@ routes.post("/games", async (req, res) => {
 })
 
 routes.put("/games/:gameId", async (req, res) => {
-  games.findByIdAndUpdate({ _id: req.params.gameId }, req.body, function (err, game) {
+  const opt = {
+    new:true
+  }
+  games.findByIdAndUpdate({ _id: req.params.gameId }, req.body,opt, function (err, game) {
     if (err) {
       res.send("false");
     }
-    res.redirect("/api/games/" + req.params.gameId);
+    else res.send(req.body);
   })
 })
 
