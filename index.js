@@ -16,7 +16,7 @@ app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"))   //methodOverride for put and delete requests
 
 //Connect to DB
-mongoose.connect(mongodbString, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false })
+mongoose.connect(mongodbString, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connecter to db"))
   .catch((err) => console.log(err));
 
